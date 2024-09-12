@@ -15,11 +15,13 @@
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">หมวดหมู่
                                     </th>
+                                    @auth
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         จำนวนรายการสินค้า</th>
                                     <th
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         เครื่องมือ</th>
+                                    @endauth
                                 </tr>
                             </thead>
                             <tbody>
@@ -40,6 +42,7 @@
                                                 </div>
                                             </div>
                                         </td>
+                                        @auth
                                         <td>
                                             <p class="text-xs font-weight-bold mb-0">99</p>
                                             <p class="text-xs text-secondary mb-0">ชิ้น</p>
@@ -53,6 +56,7 @@
                                                 <button type="submit" class="btn btn-outline-danger px-3 py-2"
                                                     onclick="return confirm('คุณต้องการลบข้อมูลหรือไม่?')"><i
                                                         class="fa fa-trash"></i> ลบ</button>
+                                                     @endauth
                                             </form>
                                         </td>
                                     </tr>
